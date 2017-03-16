@@ -1,64 +1,62 @@
-
-
-
+/* Octocat Assignment - Use the html provided to create the style sheet in css */
 
 html {
-  color: #888;
   font-family: sans-serif;
   font-size: 15px;
+  color: #888; //grey
   padding: 0;
 }
 
 body {
-  padding: 40px 0 0 0;
+  padding: 40px 0 0 0; /* 40px on top */
 }
 
 a {
-  color: #444;
   font-weight: bold;
+  color: #444; // darker grey
   text-decoration: none;
 }
 
 ul.octodex {
+  text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
-
 li.octocat {
-  display: inline-block;
-  margin: 20px 20px 40px 20px;
   width: 30%;
   min-width: 300px;
+  margin: 20px 20px 40px 20px;
   padding: 0;
+  display: inline-block;
 }
 
 .octocat > a:first-child {
+  max-width: 100%;
   border: 1px solid #ccc;
   border-radius: 4px;
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
   padding: 10px;
+  overflow: hidden;
+  display: block;
 }
 
 .octocat > a:first-child img {
-  display: block;
   max-width: 100%;
+  display: block;
 }
 
 .image-footer {
-  border-bottom: 1px solid #ccc;
+  text-align: right;
   font-weight: bold;
   padding: 20px 0;
+  border-bottom: 1px solid #ccc;
   position: relative;
-  text-align: right;
+
 }
   .image-footer::before {
     content: '';
-    width: 0px;
+    width: 0;
   	height: 0;
   	border-left: 10px solid transparent;
   	border-right: 10px solid transparent;
@@ -71,24 +69,20 @@ li.octocat {
 .image-number {
   color: #ccc;
   font-weight: bold;
-  display: block;
   float: left;
+  display: block;
 }
   .image-number::before {
     content: '#';
   }
 
-.image-caption {
-
-}
-
-
+.image-caption {}
 
 ul.authors {
-  display: inline;
   list-style: none;
   margin: 0 0 0 1px;
   padding: 0;
+  display: inline;
 }
 
 ul.authors li {
@@ -96,33 +90,23 @@ ul.authors li {
 }
 
 ul.authors li a {
-  border-radius: 4px;
-  display: block;
   float: right;
+  width: 30px;
+  border-radius: 4px;
   margin-top: -8px;
   margin-left: 4px;
   overflow: hidden;
-  width: 30px;
+  display: block;
 }
 
 ul.authors li a img {
-  display: block;
   width: 100%;
+  display: block;
 }
 
-.image footer {
+.image footer {}
 
-}
-
-
-
-
-
-
-
-
-/*clearfix https://css-tricks.com/snippets/css/clear-fix/ */
-.group:after {
+.group:after {  /*clearfix */
   content: "";
   display: table;
   clear: both;
